@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 }
 
 body, html {
@@ -45,6 +46,86 @@ li {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     background-color: white;
+    box-sizing: border-box;
+    padding: 15px 40px 0 40px;
+    z-index:2;
+    box-shadow: 5px 5px 10px #cacbcb;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 40px;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-sizing: border-box;
+    padding-right: 30px;
+}
+
+#search {
+    width: 100%;
+    height: 30px;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 15px;
+}
+
+.account {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+.avatar-small {
+    height: 40px;
+    width: 40px;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar-large {
+    height: 60px;
+    width: 60px;
+}
+
+.greeting-text {
+    font-weight: bold;
+}
+
+#greeting-1 {
+    font-size: 12px;
+}
+
+#greeting-2 {
+    font-size: 20px;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    width: 90px;
+    height: 30px;
+    background-color: #1992d4;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
 }
 
 .main {
