@@ -138,11 +138,12 @@ button {
 
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 15px;
+    gap: 20px;
 }
 
 .projects {
     grid-column: 1 / 2;
+    grid-row: 1 / 3;
 }
 
 .project-header {
@@ -153,12 +154,12 @@ button {
 .project-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+    gap: 30px 20px;
 }
 
 .card {
     background-color: white;
-    height: 200px;
+    height: 210px;
     display: grid;
     grid-template-columns: 2% 98%;
     border-radius: 10px;
@@ -198,6 +199,49 @@ button {
     grid-column: 2 / 3;
 }
 
+.announcement-header {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.announcement-content {
+    border-radius: 10px;
+    padding: 30px 25px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement-content > div {
+    padding: 0 5px 0 5px;
+}
+
+.announce:nth-child(1) {
+    padding-bottom: 15px;
+}
+
+.announce:nth-child(2) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #cacacc;
+    border-bottom: 1px solid #cacacc;
+}
+
+.announce:nth-child(3) {
+    padding-top: 15px;
+}
+
+.announce-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.announce-body {
+    font-size: 12px;
+    color: #747475;
+    text-overflow: ellipsis;
+}
+
 .announcement-content {
     background-color: white;
 }
@@ -206,6 +250,27 @@ button {
     grid-column: 2 / 3;
 }
 
+.trending-header {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
 .trending-projects {
     background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+.trend {
+    display: flex;
+    gap: 20px;
+}
+
+.trend-info > p {
+    font-size: 14px;
+    color: #747475;
+} 
